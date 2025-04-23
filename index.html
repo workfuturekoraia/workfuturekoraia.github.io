@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elevate Your Future | 2025 미래내일 일경험 프로그램</title>
+
+    <meta name="description" content="프리미엄 2025 미래내일 일경험 프로그램. 기업의 혁신 성장과 청년의 성공적인 커리어를 위한 최적의 선택.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            /* Modern, premium color scheme */
+            --primary-dark: #0B132B;
+            --primary-light: #1C2541;
+            --accent-blue: #3A86FF;
+            --accent-teal: #06D6A0;
+            --accent-gold: #FFD166;
+            --text-light: #F8F9FA;
+            --text-medium: #ADB5BD;
+            --text-dark: #212529;
+            --gray-900: #212529;
+            --gray-800: #343A40;
+            --gray-700: #495057;
+            --gray-600: #6C757D;
+            --gray-500: #ADB5BD;
+            --gray-400: #CED4DA;
+            --gray-300: #DEE2E6;
+            --gray-200: #E9ECEF;
+            --gray-100: #F8F9FA;
+            --success: #06D6A0;
+            --warning: #FFD166;
+            --danger: #EF476F;
+            --info: #118AB2;
+
+            /* Animation constants */
+            --transition-fast: 0.2s;
+            --transition-normal: 0.3s;
+            --transition-slow: 0.5s;
+
+            /* Border radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background-color: var(--primary-dark);
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(58, 134, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(6, 214, 160, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            letter-spacing: -0.3px;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Pulse animation for CTA buttons */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(58, 134, 255, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(58, 134, 255, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(58, 134, 255, 0);
+            }
+        }
+
+        @keyframes pulse-teal {
+            0% {
+                box-shadow: 0 0 0 0 rgba(6, 214, 160, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(6, 214, 160, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(6, 214, 160, 0);
+            }
+        }
+
+        .cta-button-3d.company {
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button-3d.youth {
+            animation: pulse-teal 2s infinite;
+        }
+
+        /* Stop animation on hover for cleaner interaction */
+        .cta-button-3d:hover {
+            animation: none;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* Container and Layout */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            position: relative;
+        }
+
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        /* Modern gradient header */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.9) 0%, rgba(28, 37, 65, 0.85) 100%);
+            z-index: -1;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background-image: url(https://images.unsplash.com/photo-1590985716937-5ac6685ca4a4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            background: linear-gradient(to right, var(--text-light) 0%, var(--accent-blue) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-medium);
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Tab Navigation - Elegant & Modern */
+        .tab-container {
+            position: relative;
+            margin-top: -4rem;
+            margin-bottom: 4rem;
+            z-index: 10;
+        }
+
+        .tab-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background: rgba(28, 37, 65, 0.9);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: var(--radius-lg);
+            padding: 1.2rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(58, 134, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 20;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tab-nav::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(90deg, #2464cb, #39ff14);
+            border-radius: calc(var(--radius-lg) + 2px);
+            z-index: -1;
+            opacity: 0.4;
+            animation: borderGlow 4s infinite alternate;
+        }
+
+        .tab-button {
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-medium);
+            background: transparent;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-normal) ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tab-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            transform: translateY(100%);
+            transition: transform var(--transition-normal) ease;
+            z-index: -1;
+        }
+
+        .tab-button:hover {
+            color: var(--text-light);
+        }
+
+        .tab-button:hover::before {
+            transform: translateY(0);
+        }
+
+        .tab-button.active {
+            color: #fff;
+        }
+
+        .tab-button.company.active {
+            background: linear-gradient(120deg, var(--accent-blue), rgba(58, 134, 255, 0.8));
+            box-shadow: 0 4px 12px rgba(58, 134, 255, 0.3);
+        }
+
+        .tab-button.youth.active {
+            background: linear-gradient(120deg, var(--accent-teal), rgba(6, 214, 160, 0.8));
+            box-shadow: 0 4px 12px rgba(6, 214, 160, 0.3);
+        }
+
+        .tab-button i {
+            font-size: 1.1rem;
+        }
+
+        /* Tab Content */
+        .tab-content-area {
+            min-height: 50vh;
+        }
+
+        .tab-panel {
+            display: none;
+            animation: fadeIn var(--transition-normal) ease-out;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* Modern Panel Design */
+        .panel {
+            background: rgba(28, 37, 65, 0.8);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            margin-bottom: 3rem;
+        }
+
+        .panel-section {
+            padding: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+        }
+
+        .panel-section:last-child {
+            border-bottom: none;
+        }
+
+        .panel-section h2 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .panel-section h2 i {
+            font-size: 1.5rem;
+        }
+
+        #company-content .panel-section h2 i {
+            color: var(--accent-blue);
+        }
+
+        #youth-content .panel-section h2 i {
+            color: var(--accent-teal);
+        }
+
+        /* Card Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Modern Glass Card */
+        .info-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: all var(--transition-normal) ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-teal));
+            opacity: 0;
+            transition: opacity var(--transition-normal) ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .info-card:hover::before {
+            opacity: 1;
+        }
+
+        #company-content .info-card:hover::before {
+            background: linear-gradient(to right, var(--accent-blue), rgba(58, 134, 255, 0.5));
+        }
+
+        #youth-content .info-card:hover::before {
+            background: linear-gradient(to right, var(--accent-teal), rgba(6, 214, 160, 0.5));
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-light);
+        }
+
+        #company-content .info-card i {
+            color: var(--accent-blue);
+        }
+
+        #youth-content .info-card i {
+            color: var(--accent-teal);
+        }
+
+        .info-text strong {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .info-text span {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            display: block;
+            line-height: 1.6;
+        }
+
+        .info-text .note {
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+            color: var(--gray-500);
+            display: block;
+        }
+
+        .info-text .note::before {
+            content: "※ ";
+        }
+
+        /* Overview Section */
+        .overview p {
+            color: var(--text-medium);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        .overview strong {
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        .overview .highlight {
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        /* CTA Section */
+        .apply-section {
+            text-align: center;
+            padding: 4rem 3rem;
+            background: linear-gradient(180deg, rgba(28, 37, 65, 0) 0%, rgba(11, 19, 43, 0.5) 100%);
+        }
+
+        .apply-section p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: white;
+            transition: all var(--transition-normal) ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(100%);
+            transition: transform var(--transition-normal) ease;
+            z-index: -1;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .cta-button:hover::before {
+            transform: translateY(0);
+        }
+
+        .cta-button.company {
+            background: linear-gradient(135deg, var(--accent-blue), rgba(58, 134, 255, 0.8));
+            box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
+        }
+
+        .cta-button.youth {
+            background: linear-gradient(135deg, var(--accent-teal), rgba(6, 214, 160, 0.8));
+            box-shadow: 0 4px 15px rgba(6, 214, 160, 0.3);
+        }
+
+        /* Renamed CTA button class for compatibility */
+        .cta-button-3d {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: white;
+            transition: all var(--transition-normal) ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button-3d::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(100%);
+            transition: transform var(--transition-normal) ease;
+            z-index: -1;
+        }
+
+        .cta-button-3d:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .cta-button-3d:hover::before {
+            transform: translateY(0);
+        }
+
+        .cta-button-3d.company {
+            background: linear-gradient(135deg, var(--accent-blue), rgba(58, 134, 255, 0.8));
+            box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
+        }
+
+        .cta-button-3d.youth {
+            background: linear-gradient(135deg, var(--accent-teal), rgba(6, 214, 160, 0.8));
+            box-shadow: 0 4px 15px rgba(6, 214, 160, 0.3);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 3rem;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-light);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+
+        .faq-section h2 i {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+        }
+
+        .faq {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq details {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            transition: all var(--transition-normal) ease;
+        }
+
+        .faq details:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .faq details[open] {
+            background: rgba(28, 37, 65, 0.8);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .faq summary {
+            padding: 1.5rem 2rem;
+            font-weight: 500;
+            color: var(--text-light);
+            cursor: pointer;
+            position: relative;
+            list-style: none;
+            transition: all var(--transition-normal) ease;
+            border-radius: var(--radius-md);
+        }
+
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq summary::after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-medium);
+            transition: transform var(--transition-normal) ease;
+        }
+
+        .faq details[open] summary::after {
+            transform: translateY(-50%) rotate(180deg);
+            color: var(--accent-gold);
+        }
+
+        .faq-answer {
+            padding: 0.5rem 2rem 2rem;
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .faq-answer strong {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 4rem 0;
+            margin-top: 2rem;
+            background: rgba(11, 19, 43, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer p {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color var(--transition-fast) ease;
+        }
+
+        footer a:hover {
+            color: var(--accent-teal);
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--primary-dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-light);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gray-700);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .panel-section {
+                padding: 2.5rem;
+            }
+
+            .faq-section {
+                padding: 3rem 2rem;
+            }
+
+            .info-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 15px;
+            }
+
+            .hero {
+                padding: 5rem 0;
+            }
+
+            .panel-section {
+                padding: 2rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tab-nav {
+                flex-wrap: wrap;
+            }
+
+            .tab-button {
+                padding: 0.75rem 1.5rem;
+                flex: 1;
+                justify-content: center;
+            }
+
+            .faq summary {
+                padding: 1.25rem 1.5rem;
+                padding-right: 3rem;
+            }
+
+            .faq summary::after {
+                right: 1.5rem;
+            }
+
+            .faq-answer {
+                padding: 0.5rem 1.5rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .panel-section {
+                padding: 1.5rem;
+            }
+
+            .hero {
+                min-height: 60vh;
+                padding: 4rem 0;
+            }
+
+            .hero-title {
+                font-size: 2.25rem;
+            }
+
+            .tab-container {
+                margin-top: -2rem;
+            }
+
+            .tab-nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .tab-button {
+                width: 100%;
+            }
+
+            .info-card {
+                padding: 1.5rem;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .info-card i {
+                margin: 0 auto;
+            }
+
+            .apply-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .faq-section {
+                padding: 2rem 1rem;
+            }
+        }
+
+        .company-list-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .company-list-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            background: linear-gradient(90deg, #00ffff, #00ffaa);
+            color: #000;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 255, 170, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .company-list-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 255, 170, 0.4);
+        }
+
+        .btn-text {
+            margin-right: 8px;
+        }
+
+        .btn-icon {
+            font-size: 14px;
+        }
+
+        /* Font Awesome이 필요한 경우 다음 링크를 HTML head에 추가하세요 */
+        
+        .contact-info-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .contact-info-fixed {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+  
+  .contact-text {
+    font-size: 12px;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="contact-info-fixed">
+        <div class="contact-text">
+          <strong style="color: yellow;">문의</strong><br>070-4112-2621 <br>kingjm121212@koraia.org
+        </div>
+      </div>
+
+      
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">2025 미래내일 일경험</h1>
+                <p class="hero-subtitle">청년과 기업 모집 중</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="tab-container">
+            <nav class="tab-nav">
+                <button class="tab-button youth active" data-tab="youth-content">
+                    <i class="fas fa-user-graduate"></i> 청년 (For Youth)
+                </button>
+                
+                <button class="tab-button company" data-tab="company-content">
+                    <i class="fas fa-building"></i> 기업 (For Companies)
+                </button>
+                
+            </nav>
+        </div>
+        
+
+        <main class="tab-content-area">
+            <div id="company-content" class="tab-panel">
+                <div class="panel">
+                    <section class="panel-section overview">
+                        <h2><i class="fas fa-bullseye"></i>개요</h2>
+                        <p>급변하는 시대, 기업의 지속 가능한 성장을 위해 <strong>미래 핵심 인재 확보</strong>는 필수입니다. '미래내일 일경험' 프로그램은 잠재력 있는 청년들에게
+                            기회를 제공하고, 기업에게는 <strong>정부 지원</strong>을 통해 우수 인력을 조기에 발굴하고 육성할 최적의 솔루션을 제공합니다.</p>
+                        <p><strong>참여 기간:</strong> <span class="highlight">2025.04.02 ~ 2025.06.30</span></p>
+                    </section>
+
+                    <section class="panel-section apply-section">
+                        <p>혁신을 이끌 인재와 함께 성장할 준비가 되셨나요?</p>
+                        <a href="https://forms.gle/H3MrtYx9kNTJs2bZ6" class="cta-button-3d company" target="_blank">
+                            <i class="fas fa-file-signature"></i> 기업 참여 신청하기
+                        </a>
+                    </section>
+
+                    <section class="panel-section rewards">
+                        <h2><i class="fas fa-gifts"></i>혜택 및 지원</h2>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <i class="fas fa-coins"></i>
+                                <div class="info-text">
+                                    <strong>정부 지원금</strong>
+                                    <span>인턴 1인당 매주 50,000원의 기업지원금이 지급되어 인건비 부담을 완화합니다.</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-chalkboard-user"></i>
+                                <div class="info-text">
+                                    <strong>멘토링 지원</strong>
+                                    <span>인턴 지도 담당자(멘토)에게 매주 37,500원의 멘토비가 추가 지원됩니다.</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-users-rays"></i>
+                                <div class="info-text">
+                                    <strong>인재 발굴</strong>
+                                    <span>실무 역량을 갖춘 준비된 인재를 조기에 발견하고 채용 연계 기회를 가집니다.</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="info-text">
+                                    <strong>기업 성장</strong>
+                                    <span>새로운 아이디어와 활력을 불어넣어 조직 혁신 및 성장에 기여합니다.</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-handshake-angle"></i>
+                                <div class="info-text">
+                                    <strong>ESG 경영</strong>
+                                    <span>청년 일자리 창출에 기여하며 사회적 가치를 실현하고 기업 이미지를 제고합니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="panel-section eligibility">
+                        <h2><i class="fas fa-tasks"></i>자격 요건 </h2>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <i class="fas fa-building-columns"></i>
+                                <div class="info-text">
+                                    <strong>기본 요건</strong>
+                                    <span>고용보험 피보험자 10인 이상 기업, 공공기관, 비영리단체 등</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-star"></i>
+                                <div class="info-text">
+                                    <strong>참여 우대</strong>
+                                    <span>벤처기업, 사회적기업, 혁신형 중소기업 등은 10인 미만도 참여 가능</span>
+                                    <span class="note">세부 기준 별도 문의</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-user-tie"></i>
+                                <div class="info-text">
+                                    <strong>운영 역량</strong>
+                                    <span>청년에게 실질적인 직무 경험과 체계적인 멘토링 제공 가능</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="info-text">
+                                    <strong>근무 환경</strong>
+                                    <span>안전하고 적법한 근로 환경 보장</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="panel-section apply-section">
+                        <a href="https://forms.gle/H3MrtYx9kNTJs2bZ6" class="cta-button-3d company" target="_blank">
+                            <i class="fas fa-file-signature"></i> 기업 참여 신청하기
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            <div id="youth-content" class="tab-panel active">
+                <div class="panel">
+                    <section class="panel-section overview">
+                        <h2><i class="fas fa-rocket"></i>개요</h2>
+                        <p>경험이 경쟁력이 되는 시대, '미래내일 일경험'은 여러분의 <strong>성공적인 커리어 시작</strong>을 위한 발판입니다. 정부 지원을 통해 제공되는 양질의
+                            인턴십과 체계적인 교육, 멘토링을 통해 <strong>실무 역량</strong>을 키우고 <strong>취업 경쟁력</strong>을 높이세요.</p>
+                        <p><strong>참여 기간:</strong> <span class="highlight">2025.03 ~ 2025.10</span></p>
+                    </section>
+
+
+
+
+                    <section class="panel-section apply-section">
+                        <p>값진 경험을 통해 꿈을 현실로 만들 기회를 잡으세요!</p>
+                        <a href="https://forms.gle/mpEB4WGZirhmys8d8" class="cta-button-3d youth" target="_blank">
+                            <i class="fas fa-paper-plane"></i> 청년 지원하기
+                        </a>
+
+
+
+                    </section>
+
+                    <section class="panel-section rewards">
+                        <h2><i class="fas fa-trophy"></i>혜택 및 지원</h2>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <i class="fas fa-sack-dollar"></i>
+                                <div class="info-text">
+                                    <strong>참여수당 지급</strong>
+                                    <span>안정적인 경험 몰입을 위해 월 140만원 (3개월 기준 총 420만원) 지급</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-book-open-reader"></i>
+                                <div class="info-text">
+                                    <strong>무료 직무교육</strong>
+                                    <span>인턴십 시작 전, 20시간의 핵심 직무 역량 강화 교육 제공</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-person-chalkboard"></i>
+                                <div class="info-text">
+                                    <strong>현직자 멘토링</strong>
+                                    <span>기업의 선배(멘토)로부터 실무 노하우 및 커리어 조언 획득</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-briefcase"></i>
+                                <div class="info-text">
+                                    <strong>실무 경험</strong>
+                                    <span>이력서와 포트폴리오를 풍부하게 할 실질적인 프로젝트/업무 경험</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="info-text">
+                                    <strong>경쟁력 강화</strong>
+                                    <span>직무 이해도 향상 및 실무 역량 증명으로 취업 성공률 제고</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-network-wired"></i>
+                                <div class="info-text">
+                                    <strong>네트워킹</strong>
+                                    <span>현직 전문가 및 동료 인턴들과 교류하며 인적 네트워크 확장</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="panel-section eligibility">
+                        <h2><i class="fas fa-user-check"></i>자격 요건 </h2>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <i class="fas fa-id-card"></i>
+                                <div class="info-text">
+                                    <strong>연령 조건</strong>
+                                    <span>만 15세 이상 ~ 만 34세 이하 미취업 상태인 청년</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-medal"></i>
+                                <div class="info-text">
+                                    <strong>군필자 우대</strong>
+                                    <span>의무복무 기간만큼 참여 연령 연장 적용 (최고 만 39세)</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="info-text">
+                                    <strong>학력/전공</strong>
+                                    <span>기본적으로 무관하나, 일부 기업/직무에서 우대 조건이 있을 수 있음</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info-text">
+                                    <strong>지역/직무</strong>
+                                    <span>서울(IT 관련), 부산(영상/일러스트/외식 등) 공고 확인 필요</span>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-lightbulb"></i>
+                                <div class="info-text">
+                                    <strong>참여 자세</strong>
+                                    <span>배우고자 하는 적극적인 의지와 성장 잠재력</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="panel-section apply-section">
+                        
+                        <a href="https://forms.gle/mpEB4WGZirhmys8d8" class="cta-button-3d youth" target="_blank">
+                            <i class="fas fa-paper-plane"></i> 청년 지원하기
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            <section class="panel faq-section">
+                <h2><i class="fas fa-question-circle"></i>자주 물어보는 질문</h2>
+                <div class="faq">
+                    <details>
+                        <summary>미래내일 일경험 사업은 무엇인가요?</summary>
+                        <div class="faq-answer">청년에게는 직무 경험을, 기업에게는 인재 탐색 기회를 제공하는 매칭형 인턴십 지원 프로그램입니다. 변화하는 채용 시장에 대비하여
+                            청년들의 성공적인 사회 진출을 돕습니다.</div>
+                    </details>
+                    <details>
+                        <summary>기업과 청년 모두에게 어떤 점이 좋은가요?</summary>
+                        <div class="faq-answer">기업은 정부 지원을 받아 인재를 발굴/육성하고, 청년은 실무 경험과 수당, 교육, 멘토링을 받으며 취업 경쟁력을 높일 수 있는
+                            상호 윈-윈(Win-Win) 프로그램입니다.</div>
+                    </details>
+                    <details>
+                        <summary>인턴십 기간과 근무 시간은 어떻게 되나요?</summary>
+                        <div class="faq-answer">인턴십 기간은 기본적으로 <strong>12주(서울)</strong> 또는 <strong>8주(부산,
+                                7~8월)</strong>이며, 주 <strong>25시간</strong> 근무를 원칙으로 합니다. 구체적인 시기와 근무 형태는 참여 기업과 협의하여 조정될
+                            수 있습니다.</div>
+                    </details>
+                    <details>
+                        <summary>참여 신청은 어떻게 하나요?</summary>
+                        <div class="faq-answer">보고 계신 화면 상단의 '기업' 또는 '청년' 탭을 선택하신 후, 해당 내용의 마지막에 있는
+                            <strong>'신청하기'</strong> 버튼을 클릭하여 관련 절차를 진행하시면 됩니다. (링크는 Google Form 등으로 연결됩니다)
+                        </div>
+                    </details>
+                    <details>
+                        <summary>지원금 외 다른 혜택은 없나요?</summary>
+                        <div class="faq-answer">기업은 우수 인재를 조기에 확보하고 사회적 가치를 실현할 수 있으며, 청년은 무료 직무교육, 현직자 멘토링, 실무 경험을 통한
+                            포트폴리오 강화 등 금전적 지원 외에도 다양한 성장 기회를 얻을 수 있습니다.</div>
+                    </details>
+                    <details>
+                        <summary>문의사항은 어디로 연락하면 되나요?</summary>
+                        <div class="faq-answer">프로그램 운영 사무국 전화 <strong>070-4112-2621</strong> 또는 이메일
+                            <strong>kingjm121212@koraia.org</strong> 로 문의하시면 상세하고 친절하게 안내해 드리겠습니다.
+                        </div>
+                    </details>
+                    <div class="company-list-container">
+                        <a href="https://docs.google.com/spreadsheets/d/1SiwOOPfxZ7hRFGIKMclcs97Hl4gee3Ch/edit?gid=53791375#gid=53791375" target="_blank" class="company-list-btn">
+                            <span class="btn-text">참여기업 목록보기</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-external-link-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+           
+
+        </main>
+
+        <footer>
+            <p>2025 KORAIA</p>
+            <p>문의: 070-4112-2621 | Email: <a href="mailto:kingjm121212@koraia.org">kingjm121212@koraia.org</a></p>
+            <p>&copy; 2025 Program Operator. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        // Function to switch tabs
+        function switchTab(targetTabId) {
+            // Update button active state
+            tabButtons.forEach(btn => {
+                if (btn.getAttribute('data-tab') === targetTabId) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Update panel active state
+            tabPanels.forEach(panel => {
+                if (panel.id === targetTabId) {
+                    panel.classList.add('active');
+                } else {
+                    panel.classList.remove('active');
+                }
+            });
+        }
+
+        // Add click event listeners
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+                switchTab(targetTab);
+            });
+        });
+
+        // Set initial active tab (e.g., company)
+        document.addEventListener('DOMContentLoaded', () => {
+            switchTab('youth-content'); // Or 'youth-content' if you want youth default
+        });
+    </script>
+
+</body>
+
+</html>
