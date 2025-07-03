@@ -186,11 +186,11 @@
 
         /* Modern gradient header */
         .hero {
-            min-height: 90vh;
+            min-height: 50vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 6rem 0;
+            padding: 4rem 0;
             position: relative;
             overflow: hidden;
         }
@@ -247,7 +247,7 @@
         /* Tab Navigation - Elegant & Modern */
         .tab-container {
             position: relative;
-            margin-top: -3rem;
+            margin-top: -4rem;
             margin-bottom: 4rem;
             z-index: 10;
         }
@@ -356,31 +356,19 @@
 
         /* Modern Panel Design */
         .panel {
-            background: rgba(28, 37, 65, 0.9);
+            background: rgba(28, 37, 65, 0.8);
             border-radius: var(--radius-xl);
             overflow: hidden;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             margin-bottom: 3rem;
-            position: relative;
-        }
-
-        .panel::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-blue), var(--accent-teal), var(--accent-gold));
-            opacity: 0.8;
         }
 
         .panel-section {
-            padding: 3.5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             position: relative;
         }
 
@@ -391,14 +379,13 @@
         .panel-section h2 {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 2.5rem;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
             font-weight: 600;
-            font-size: 2rem;
         }
 
         .panel-section h2 i {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         #company-content .panel-section h2 i {
@@ -418,14 +405,14 @@
 
         /* Modern Glass Card */
         .info-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.03);
             border-radius: var(--radius-lg);
-            padding: 2.5rem;
+            padding: 2rem;
             transition: all var(--transition-normal) ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             display: flex;
             align-items: flex-start;
-            gap: 1.5rem;
+            gap: 1.25rem;
             height: 100%;
             position: relative;
             overflow: hidden;
@@ -443,30 +430,13 @@
             transition: opacity var(--transition-normal) ease;
         }
 
-        .info-card::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-            opacity: 0;
-            transition: opacity var(--transition-normal) ease;
-            pointer-events: none;
-        }
-
         .info-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0.05);
         }
 
         .info-card:hover::before {
-            opacity: 1;
-        }
-
-        .info-card:hover::after {
             opacity: 1;
         }
 
@@ -479,13 +449,12 @@
         }
 
         .info-card i {
-            font-size: 2.2rem;
-            width: 50px;
+            font-size: 2rem;
+            width: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: var(--text-light);
-            flex-shrink: 0;
         }
 
         #company-content .info-card i {
@@ -499,40 +468,36 @@
         .info-text strong {
             font-weight: 600;
             display: block;
-            margin-bottom: 1rem;
-            font-size: 1.15rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
             color: var(--text-light);
-            line-height: 1.3;
         }
 
         .info-text span {
             color: var(--text-medium);
-            font-size: 1rem;
+            font-size: 0.95rem;
             display: block;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
         .info-text .note {
-            font-size: 0.9rem;
-            margin-top: 1rem;
-            color: var(--gray-400);
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+            color: var(--gray-500);
             display: block;
-            font-style: italic;
         }
 
         .info-text .note::before {
             content: "※ ";
-            color: var(--accent-gold);
-            font-weight: bold;
         }
 
         /* Overview Section */
         .overview p {
             color: var(--text-medium);
-            margin-bottom: 1.8rem;
-            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
             line-height: 1.8;
-            max-width: 900px;
+            max-width: 800px;
         }
 
         .overview strong {
@@ -542,35 +507,20 @@
 
         .overview .highlight {
             color: var(--accent-gold);
-            font-weight: 600;
-            background: rgba(255, 209, 102, 0.1);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
+            font-weight: 500;
         }
 
         /* CTA Section */
         .apply-section {
             text-align: center;
             padding: 4rem 3rem;
-            background: linear-gradient(180deg, rgba(28, 37, 65, 0) 0%, rgba(11, 19, 43, 0.7) 100%);
-            position: relative;
-        }
-
-        .apply-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at center, rgba(58, 134, 255, 0.05) 0%, transparent 70%);
-            pointer-events: none;
+            background: linear-gradient(180deg, rgba(28, 37, 65, 0) 0%, rgba(11, 19, 43, 0.5) 100%);
         }
 
         .apply-section p {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 500;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             color: var(--text-light);
         }
 
@@ -838,7 +788,7 @@
         /* Responsive Design */
         @media (max-width: 992px) {
             .panel-section {
-                padding: 3rem 2.5rem;
+                padding: 2.5rem;
             }
 
             .faq-section {
@@ -846,16 +796,7 @@
             }
 
             .info-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 2rem;
-            }
-
-            .panel-section h2 {
-                font-size: 1.8rem;
-            }
-
-            .overview p {
-                font-size: 1.05rem;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
         }
 
@@ -865,28 +806,25 @@
             }
 
             .hero {
-                padding: 4rem 0;
+                padding: 5rem 0;
             }
 
             .panel-section {
-                padding: 2.5rem 2rem;
+                padding: 2rem;
             }
 
             .info-grid {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
             }
 
             .tab-nav {
                 flex-wrap: wrap;
-                gap: 1rem;
             }
 
             .tab-button {
-                padding: 1rem 1.5rem;
+                padding: 0.75rem 1.5rem;
                 flex: 1;
                 justify-content: center;
-                min-width: 200px;
             }
 
             .faq summary {
@@ -901,26 +839,6 @@
             .faq-answer {
                 padding: 0.5rem 1.5rem 1.5rem;
             }
-
-            .apply-section {
-                padding: 3rem 2rem;
-            }
-
-            .apply-section p {
-                font-size: 1.2rem;
-            }
-
-            .info-card {
-                padding: 2rem;
-            }
-
-            .panel-section h2 {
-                font-size: 1.6rem;
-            }
-
-            .panel-section h2 i {
-                font-size: 1.5rem;
-            }
         }
 
         @media (max-width: 576px) {
@@ -929,16 +847,16 @@
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
             }
 
             .panel-section {
-                padding: 2rem 1.5rem;
+                padding: 1.5rem;
             }
 
             .hero {
                 min-height: 60vh;
-                padding: 3rem 0;
+                padding: 4rem 0;
             }
 
             .hero-title {
@@ -951,66 +869,30 @@
 
             .tab-nav {
                 flex-direction: column;
-                gap: 0.75rem;
-                padding: 1rem;
+                gap: 0.5rem;
             }
 
             .tab-button {
                 width: 100%;
-                min-width: auto;
-                padding: 1rem;
             }
 
             .info-card {
-                padding: 1.8rem;
+                padding: 1.5rem;
                 flex-direction: column;
-                gap: 1.2rem;
+                gap: 1rem;
                 text-align: center;
             }
 
             .info-card i {
                 margin: 0 auto;
-                font-size: 2.5rem;
-                width: auto;
             }
 
             .apply-section {
-                padding: 2.5rem 1.5rem;
-            }
-
-            .apply-section p {
-                font-size: 1.1rem;
+                padding: 3rem 1.5rem;
             }
 
             .faq-section {
                 padding: 2rem 1rem;
-            }
-
-            .panel-section h2 {
-                font-size: 1.4rem;
-                flex-direction: column;
-                gap: 0.5rem;
-                text-align: center;
-            }
-
-            .panel-section h2 i {
-                font-size: 1.8rem;
-            }
-
-            .overview p {
-                font-size: 1rem;
-            }
-
-            .cta-button-3d {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-                margin: 0.5rem;
-                width: calc(100% - 1rem);
-                max-width: 300px;
-            }
-
-            .nav-content {
-                padding: 0 1rem;
             }
         }
 
@@ -1077,9 +959,10 @@
         .nav-links {
             display: flex;
             gap: 1rem;
+            align-items: center;
         }
 
-        .nav-btn {
+        .nav-home-btn, .nav-chat-btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
@@ -1090,20 +973,152 @@
             font-weight: 500;
             transition: all var(--transition-normal) ease;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1rem;
         }
 
-        .nav-btn.faq-btn {
+        .nav-home-btn {
             background: linear-gradient(135deg, var(--accent-blue), rgba(58, 134, 255, 0.8));
+            box-shadow: 0 2px 8px rgba(58, 134, 255, 0.3);
         }
 
-        .nav-btn.faq-btn:hover {
+        .nav-home-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(58, 134, 255, 0.4);
             color: white;
         }
 
-        .nav-btn i {
+        .nav-chat-btn {
+            background: linear-gradient(135deg, var(--accent-teal), rgba(6, 214, 160, 0.8));
+            box-shadow: 0 2px 8px rgba(6, 214, 160, 0.3);
+        }
+
+        .nav-chat-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(6, 214, 160, 0.4);
+            color: white;
+        }
+
+        .nav-home-btn i, .nav-chat-btn i {
             font-size: 1rem;
+        }
+
+        /* FAQ 섹션 개선 */
+        .faq-section {
+            padding: 3rem;
+            background: rgba(28, 37, 65, 0.6);
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-light);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            font-size: 2.5rem;
+        }
+
+        .faq-section h2 i {
+            color: var(--accent-gold);
+            font-size: 2rem;
+        }
+
+        .faq {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq details {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            margin-bottom: 1.5rem;
+            transition: all var(--transition-normal) ease;
+            overflow: hidden;
+        }
+
+        .faq details:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .faq details[open] {
+            background: rgba(28, 37, 65, 0.9);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border-color: rgba(255, 209, 102, 0.3);
+        }
+
+        .faq summary {
+            padding: 2rem 2.5rem;
+            font-weight: 600;
+            color: var(--text-light);
+            cursor: pointer;
+            position: relative;
+            list-style: none;
+            transition: all var(--transition-normal) ease;
+            border-radius: var(--radius-lg);
+            font-size: 1.1rem;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 209, 102, 0.05) 100%);
+        }
+
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq summary::after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent-gold);
+            transition: all var(--transition-normal) ease;
+            font-size: 1.2rem;
+        }
+
+        .faq details[open] summary::after {
+            transform: translateY(-50%) rotate(180deg);
+            color: var(--accent-teal);
+        }
+
+        .faq summary:hover {
+            background: linear-gradient(90deg, rgba(255, 209, 102, 0.1) 0%, rgba(6, 214, 160, 0.05) 100%);
+        }
+
+        .faq-answer {
+            padding: 0.5rem 2.5rem 2.5rem;
+            color: var(--text-medium);
+            font-size: 1rem;
+            line-height: 1.8;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-answer strong {
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .faq-answer .note {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            color: var(--gray-400);
+            display: block;
+            font-style: italic;
+        }
+
+        .faq-answer .note::before {
+            content: "※ ";
+            color: var(--accent-gold);
+            font-weight: bold;
         }
 
         /* 모바일 반응형 네비게이션 */
@@ -1117,9 +1132,33 @@
                 font-size: 1.1rem;
             }
 
-            .nav-btn {
+            .nav-home-btn {
                 padding: 0.6rem 1.2rem;
                 font-size: 0.9rem;
+            }
+
+            .faq summary {
+                padding: 1.5rem 2rem;
+                padding-right: 3.5rem;
+                font-size: 1rem;
+            }
+
+            .faq summary::after {
+                right: 2rem;
+                font-size: 1rem;
+            }
+
+            .faq-answer {
+                padding: 0.5rem 2rem 2rem;
+                font-size: 0.95rem;
+            }
+
+            .faq-section h2 {
+                font-size: 2rem;
+            }
+
+            .faq-section h2 i {
+                font-size: 1.5rem;
             }
         }
         
@@ -1157,6 +1196,7 @@
 
 <body>
 
+
       
     <!-- 네비게이션 바 -->
     <nav class="main-nav">
@@ -1165,11 +1205,14 @@
                 <div class="nav-brand">
                     <h3>미래내일 일경험</h3>
                 </div>
-                
                 <div class="nav-links">
-                    <a href="faq.html" class="nav-btn faq-btn">
-                        <i class="fas fa-question-circle"></i>
-                        자주 묻는 질문
+                    <button onclick="ChannelIO('show')" class="nav-chat-btn">
+                        <i class="fas fa-comments"></i>
+                        채팅 문의
+                    </button>
+                    <a href="index.html" class="nav-home-btn">
+                        <i class="fas fa-home"></i>
+                        메인으로 돌아가기
                     </a>
                 </div>
             </div>
@@ -1179,253 +1222,85 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">2025 미래내일 일경험</h1>
-                <p class="hero-subtitle">청년과 기업 모집 중</p>
+                <h1 class="hero-title">자주 물어보는 질문</h1>
+                <p class="hero-subtitle">FAQ - 궁금한 점을 확인해보세요</p>
             </div>
         </div>
     </section>
 
     <div class="container">
-        <div class="tab-container">
-            <nav class="tab-nav">
-                <button class="tab-button youth active" data-tab="youth-content">
-                    <i class="fas fa-user-graduate"></i> 청년 (For Youth)
-                </button>
-                
-                <button class="tab-button company" data-tab="company-content">
-                    <i class="fas fa-building"></i> 기업 (For Companies)
-                </button>
-                
-            </nav>
-        </div>
-        
-
-        <main class="tab-content-area">
-            <div id="company-content" class="tab-panel">
-                <div class="panel">
-                    <section class="panel-section overview">
-                        <h2><i class="fas fa-bullseye"></i>개요</h2>
-                        <p>급변하는 시대, 기업의 지속 가능한 성장을 위해 <strong>미래 핵심 인재 확보</strong>는 필수입니다. '미래내일 일경험' 프로그램은 잠재력 있는 청년들에게
-                            기회를 제공하고, 기업에게는 <strong>정부 지원</strong>을 통해 우수 인력을 조기에 발굴하고 육성할 최적의 솔루션을 제공합니다.</p>
-                        <p><strong>참여 기간:</strong> <span class="highlight">2025.04.02 ~ 2025.06.30</span></p>
-                    </section>
-
-                    <section class="panel-section apply-section">
-                        <p>혁신을 이끌 인재와 함께 성장할 준비가 되셨나요?</p>
-                        <a href="https://forms.gle/H3MrtYx9kNTJs2bZ6" class="cta-button-3d company" target="_blank">
-                            <i class="fas fa-file-signature"></i> 기업 참여 신청하기
-                        </a>
-                    </section>
-
-                    <section class="panel-section rewards">
-                        <h2><i class="fas fa-gifts"></i>혜택 및 지원</h2>
-                        <div class="info-grid">
-                            <div class="info-card">
-                                <i class="fas fa-coins"></i>
-                                <div class="info-text">
-                                    <strong>정부 지원금</strong>
-                                    <span>인턴 1인당 매주 50,000원의 기업지원금이 지급되어 인건비 부담을 완화합니다.</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-chalkboard-user"></i>
-                                <div class="info-text">
-                                    <strong>멘토링 지원</strong>
-                                    <span>인턴 지도 담당자(멘토)에게 매주 37,500원의 멘토비가 추가 지원됩니다.</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-users-rays"></i>
-                                <div class="info-text">
-                                    <strong>인재 발굴</strong>
-                                    <span>실무 역량을 갖춘 준비된 인재를 조기에 발견하고 채용 연계 기회를 가집니다.</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-chart-line"></i>
-                                <div class="info-text">
-                                    <strong>기업 성장</strong>
-                                    <span>새로운 아이디어와 활력을 불어넣어 조직 혁신 및 성장에 기여합니다.</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-handshake-angle"></i>
-                                <div class="info-text">
-                                    <strong>ESG 경영</strong>
-                                    <span>청년 일자리 창출에 기여하며 사회적 가치를 실현하고 기업 이미지를 제고합니다.</span>
-                                </div>
-                            </div>
+    
+            <section class="panel faq-section">
+                <h2><i class="fas fa-question-circle"></i>자주 물어보는 질문</h2>
+                <div class="faq">
+                    <details>
+                        <summary>미래내일 일경험 사업은 무엇인가요?</summary>
+                        <div class="faq-answer">청년에게는 직무 경험을, 기업에게는 인재 탐색 기회를 제공하는 매칭형 인턴십 지원 프로그램입니다. 변화하는 채용 시장에 대비하여
+                            청년들의 성공적인 사회 진출을 돕습니다.</div>
+                    </details>
+                    <details>
+                        <summary>기업과 청년 모두에게 어떤 점이 좋은가요?</summary>
+                        <div class="faq-answer">기업은 정부 지원을 받아 인재를 발굴/육성하고, 청년은 실무 경험과 수당, 교육, 멘토링을 받으며 취업 경쟁력을 높일 수 있는
+                            상호 윈-윈(Win-Win) 프로그램입니다.</div>
+                    </details>
+                    <details>
+                        <summary>인턴십 기간과 근무 시간은 어떻게 되나요?</summary>
+                        <div class="faq-answer">인턴십 기간은 기본적으로 <strong>12주(서울)</strong> 또는 <strong>8주(부산,
+                                7~8월)</strong>이며, 주 <strong>25시간</strong> 근무를 원칙으로 합니다. 구체적인 시기와 근무 형태는 참여 기업과 협의하여 조정될
+                            수 있습니다.</div>
+                    </details>
+                    <details>
+                        <summary>참여 신청은 어떻게 하나요?</summary>
+                        <div class="faq-answer">보고 계신 화면 상단의 '기업' 또는 '청년' 탭을 선택하신 후, 해당 내용의 마지막에 있는
+                            <strong>'신청하기'</strong> 버튼을 클릭하여 관련 절차를 진행하시면 됩니다. (링크는 Google Form 등으로 연결됩니다)
                         </div>
-                    </section>
-
-                    <section class="panel-section eligibility">
-                        <h2><i class="fas fa-tasks"></i>자격 요건 </h2>
-                        <div class="info-grid">
-                            <div class="info-card">
-                                <i class="fas fa-building-columns"></i>
-                                <div class="info-text">
-                                    <strong>기본 요건</strong>
-                                    <span>고용보험 피보험자 10인 이상 기업, 공공기관, 비영리단체 등</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-star"></i>
-                                <div class="info-text">
-                                    <strong>참여 우대</strong>
-                                    <span>벤처기업, 사회적기업, 혁신형 중소기업 등은 10인 미만도 참여 가능</span>
-                                    <span class="note">세부 기준 별도 문의</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-user-tie"></i>
-                                <div class="info-text">
-                                    <strong>운영 역량</strong>
-                                    <span>청년에게 실질적인 직무 경험과 체계적인 멘토링 제공 가능</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-shield-alt"></i>
-                                <div class="info-text">
-                                    <strong>근무 환경</strong>
-                                    <span>안전하고 적법한 근로 환경 보장</span>
-                                </div>
-                            </div>
+                    </details>
+                    <details>
+                        <summary>지원금 외 다른 혜택은 없나요?</summary>
+                        <div class="faq-answer">기업은 우수 인재를 조기에 확보하고 사회적 가치를 실현할 수 있으며, 청년은 무료 직무교육, 현직자 멘토링, 실무 경험을 통한
+                            포트폴리오 강화 등 금전적 지원 외에도 다양한 성장 기회를 얻을 수 있습니다.</div>
+                    </details>
+                    <details>
+                        <summary>청년수당은 어떻게 지급되나요?</summary>
+                        <div class="faq-answer">주 25시간 근무 기준으로 <strong>주 35만 원, 월 최대 140만 원</strong>이 지급됩니다. 단, 출석률에 따라 실제 지급 금액이 조정될 수 있습니다.</div>
+                    </details>
+                    <details>
+                        <summary>사전 직무교육은 반드시 대면으로 참여해야 하나요?</summary>
+                        <div class="faq-answer">사전 직무교육은 필수 참석입니다.<br>
+                            단, 거주지와 교육장이 왕복 60km 이상 떨어진 경우, <strong>주민등록등본과 재학증명서(재학생에 한함)</strong>를 제출하시면 비대면 참여가 가능합니다.<br>
+                            <span class="note">그 외의 경우는 대면 참석이 필수입니다.</span>
                         </div>
-                    </section>
-
-                    <section class="panel-section apply-section">
-                        <a href="https://forms.gle/H3MrtYx9kNTJs2bZ6" class="cta-button-3d company" target="_blank">
-                            <i class="fas fa-file-signature"></i> 기업 참여 신청하기
-                        </a>
-                    </section>
+                    </details>
+                    <details>
+                        <summary>선발 절차는 어떻게 진행되나요?</summary>
+                        <div class="faq-answer">선발은 다음과 같은 절차로 진행됩니다:<br>
+                            <strong>일경험 통합플랫폼 지원 → 기업에서 지원자 검토 → 면접 등 전형(기업별 상이) → 최종 선발</strong>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>선발 여부는 어떻게 통보받나요?</summary>
+                        <div class="faq-answer">선발자에 한해 운영 담당자가 직접 유선으로 연락드리며, 이후 진행 과정도 상세히 안내해드립니다.</div>
+                    </details>
+                    <details>
+                        <summary>매칭되지 않으면(불합격 시) 별도 연락이 오나요?</summary>
+                        <div class="faq-answer">지원자 수가 많아 <strong>불합격자에게는 별도의 연락을 드리지 않습니다.</strong><br>
+                            지원 후 3~4일 이내 연락이 없을 경우 매칭되지 않은 것으로 간주해 주세요.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>비선발 요청 또는 지원 취소는 어떻게 하나요?</summary>
+                        <div class="faq-answer">매칭이 되지 않은 분들은 일정 주기로 비선발 처리가 진행됩니다.<br>
+                            빠른 비선발을 원하실 경우, <strong>kingjm121212@koraia.org</strong>로 지원 프로그램명과 성함을 적어 보내주시면 확인 후 처리해드리겠습니다.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>문의사항은 어디로 연락하면 되나요?</summary>
+                        <div class="faq-answer">프로그램 운영 사무국 전화 <strong>070-4112-2621</strong> 또는 이메일
+                            <strong>kingjm121212@koraia.org</strong> 로 문의하시면 상세하고 친절하게 안내해 드리겠습니다.
+                        </div>
+                    </details>
                 </div>
-            </div>
-
-            <div id="youth-content" class="tab-panel active">
-                <div class="panel">
-                    <section class="panel-section overview">
-                        <h2><i class="fas fa-rocket"></i>개요</h2>
-                        <p>경험이 경쟁력이 되는 시대, '미래내일 일경험'은 여러분의 <strong>성공적인 커리어 시작</strong>을 위한 발판입니다. 정부 지원을 통해 제공되는 양질의
-                            인턴십과 체계적인 교육, 멘토링을 통해 <strong>실무 역량</strong>을 키우고 <strong>취업 경쟁력</strong>을 높이세요.</p>
-                        <p><strong>참여 기간:</strong> <span class="highlight">2025.03 ~ 2025.10</span></p>
-                    </section>
-
-
-
-
-                    <section class="panel-section apply-section">
-                        <p>값진 경험을 통해 꿈을 현실로 만들 기회를 잡으세요!</p>
-                        <a href="https://docs.google.com/spreadsheets/d/1SiwOOPfxZ7hRFGIKMclcs97Hl4gee3Ch/edit?gid=53791375#gid=53791375" class="cta-button-3d youth" target="_blank">
-                            <i class="fas fa-paper-plane"></i> 청년 지원하기(IT 분야)
-                        </a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYaXmu7iM2WbgYjp2mzs6MJ7CikvPfXgSo1jXJZ1VpAw5JWQ/viewform" class="cta-button-3d youth2" target="_blank">
-                            <i class="fas fa-paper-plane"></i> 청년지원하기(기타분야-경영사무 등)
-                        </a>
-
-
-
-                    </section>
-
-                    <section class="panel-section rewards">
-                        <h2><i class="fas fa-trophy"></i>혜택 및 지원</h2>
-                        <div class="info-grid">
-                            <div class="info-card">
-                                <i class="fas fa-sack-dollar"></i>
-                                <div class="info-text">
-                                    <strong>참여수당 지급</strong>
-                                    <span>안정적인 경험 몰입을 위해 월 140만원 (3개월 기준 총 420만원) 지급</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-book-open-reader"></i>
-                                <div class="info-text">
-                                    <strong>무료 직무교육</strong>
-                                    <span>인턴십 시작 전, 20시간의 핵심 직무 역량 강화 교육 제공</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-person-chalkboard"></i>
-                                <div class="info-text">
-                                    <strong>현직자 멘토링</strong>
-                                    <span>기업의 선배(멘토)로부터 실무 노하우 및 커리어 조언 획득</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-briefcase"></i>
-                                <div class="info-text">
-                                    <strong>실무 경험</strong>
-                                    <span>이력서와 포트폴리오를 풍부하게 할 실질적인 프로젝트/업무 경험</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-chart-line"></i>
-                                <div class="info-text">
-                                    <strong>경쟁력 강화</strong>
-                                    <span>직무 이해도 향상 및 실무 역량 증명으로 취업 성공률 제고</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-network-wired"></i>
-                                <div class="info-text">
-                                    <strong>네트워킹</strong>
-                                    <span>현직 전문가 및 동료 인턴들과 교류하며 인적 네트워크 확장</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="panel-section eligibility">
-                        <h2><i class="fas fa-user-check"></i>자격 요건 </h2>
-                        <div class="info-grid">
-                            <div class="info-card">
-                                <i class="fas fa-id-card"></i>
-                                <div class="info-text">
-                                    <strong>연령 조건</strong>
-                                    <span>만 15세 이상 ~ 만 34세 이하 미취업 상태인 청년</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-medal"></i>
-                                <div class="info-text">
-                                    <strong>군필자 우대</strong>
-                                    <span>의무복무 기간만큼 참여 연령 연장 적용 (최고 만 39세)</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div class="info-text">
-                                    <strong>학력/전공</strong>
-                                    <span>기본적으로 무관하나, 일부 기업/직무에서 우대 조건이 있을 수 있음</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="info-text">
-                                    <strong>지역/직무</strong>
-                                    <span>서울(IT 관련), 부산(영상/일러스트/외식 등) 공고 확인 필요</span>
-                                </div>
-                            </div>
-                            <div class="info-card">
-                                <i class="fas fa-lightbulb"></i>
-                                <div class="info-text">
-                                    <strong>참여 자세</strong>
-                                    <span>배우고자 하는 적극적인 의지와 성장 잠재력</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="panel-section apply-section">
-                        
-                        <a href="https://docs.google.com/spreadsheets/d/1SiwOOPfxZ7hRFGIKMclcs97Hl4gee3Ch/edit?gid=53791375#gid=53791375" class="cta-button-3d youth" target="_blank">
-                            <i class="fas fa-paper-plane"></i> 청년 지원하기(IT 분야)
-                        </a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYaXmu7iM2WbgYjp2mzs6MJ7CikvPfXgSo1jXJZ1VpAw5JWQ/viewform" class="cta-button-3d youth2" target="_blank">
-                            <i class="fas fa-paper-plane"></i> 청년지원하기(기타분야-경영사무 등)
-                        </a>
-                    </section>
-                </div>
-            </div>
+            </section>
 
 
         </main>
@@ -1475,14 +1350,13 @@
             switchTab('youth-content'); // Or 'youth-content' if you want youth default
         });
     </script>
-    <script>
+<script>
   (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
 
   ChannelIO('boot', {
     "pluginKey": "ae86440a-fd44-44ae-9880-0a88e9af6d25"
   });
 </script>
-
 </body>
 
 </html>
